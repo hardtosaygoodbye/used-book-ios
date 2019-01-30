@@ -13,6 +13,8 @@
 		34EC465522008E4800B5329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465422008E4800B5329D /* Assets.xcassets */; };
 		34EC465822008E4800B5329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465622008E4800B5329D /* LaunchScreen.storyboard */; };
 		34EC465B22008E4800B5329D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC465A22008E4800B5329D /* main.m */; };
+		34EC46AA220168CC00B5329D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC46A9220168CC00B5329D /* BaseViewController.m */; };
+		34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC46AD22016A9800B5329D /* SignInViewController.m */; };
 		B5EC909DFC7AA2521173A308 /* libPods-used-book-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 337594A05791DD7BEE79E80F /* libPods-used-book-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,11 @@
 		34EC465722008E4800B5329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34EC465922008E4800B5329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EC465A22008E4800B5329D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34EC46A8220168CC00B5329D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		34EC46A9220168CC00B5329D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		34EC46AB2201692800B5329D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		34EC46AC22016A9800B5329D /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		34EC46AD22016A9800B5329D /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A29A5B0045635A15A0A601CB /* Pods-used-book-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-used-book-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-used-book-ios/Pods-used-book-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A6D0B4559FE784C38C08D73C /* Pods-used-book-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-used-book-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-used-book-ios/Pods-used-book-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +80,7 @@
 		34EC464A22008E4700B5329D /* used-book-ios */ = {
 			isa = PBXGroup;
 			children = (
+				34EC46AF22016AA100B5329D /* Controller */,
 				34EC464B22008E4700B5329D /* AppDelegate.h */,
 				34EC464C22008E4700B5329D /* AppDelegate.m */,
 				34EC464E22008E4700B5329D /* ViewController.h */,
@@ -82,8 +90,20 @@
 				34EC465622008E4800B5329D /* LaunchScreen.storyboard */,
 				34EC465922008E4800B5329D /* Info.plist */,
 				34EC465A22008E4800B5329D /* main.m */,
+				34EC46A8220168CC00B5329D /* BaseViewController.h */,
+				34EC46A9220168CC00B5329D /* BaseViewController.m */,
+				34EC46AB2201692800B5329D /* PrefixHeader.pch */,
 			);
 			path = "used-book-ios";
+			sourceTree = "<group>";
+		};
+		34EC46AF22016AA100B5329D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34EC46AC22016A9800B5329D /* SignInViewController.h */,
+				34EC46AD22016A9800B5329D /* SignInViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D1C1385F06687447BAB67A6E /* Pods */ = {
@@ -191,6 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */,
+				34EC46AA220168CC00B5329D /* BaseViewController.m in Sources */,
 				34EC465022008E4700B5329D /* ViewController.m in Sources */,
 				34EC465B22008E4800B5329D /* main.m in Sources */,
 				34EC464D22008E4700B5329D /* AppDelegate.m in Sources */,
@@ -337,6 +359,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/used-book-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "used-book-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,6 +379,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/used-book-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "used-book-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

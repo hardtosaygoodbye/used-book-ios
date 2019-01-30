@@ -1,0 +1,76 @@
+//
+//  PrefixHeader.pch
+//  used-book-ios
+//
+//  Created by Taylor on 2019/1/30.
+//  Copyright © 2019 Taylor. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 库
+#import <AFNetworking.h>
+
+// import
+#import "AppDelegate.h"
+#import "SignInViewController.h"
+
+// base url
+#ifdef DEBUG
+#   define kBaseUrl @"https://test.daqinjia.cn/hysteria/api/"
+#   define kRongCloudAppID (@"uwd1c0sxdole1")
+#else
+#   define kBaseUrl @"https://www.daqinjia.cn/hysteria/api/"
+#   define kRongCloudAppID (@"8luwapkvuqxtl")
+#endif
+
+// 错误信息Toast
+#define kErrToast [AWUI showHudTipStr:[data valueForKey:@"detail"]];
+#define kResSuccess statusCode >= 200 && statusCode < 300
+
+// AppStore地址
+#define kAppUrl  @"http://itunes.apple.com/app/id923676989"
+// 反馈地址
+#define kAppReviewURL   @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=923676989"
+
+// 版本号
+#define kAppVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+#define kAppBuild [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+
+// 常用变量
+#define Log(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+#define kWindow [UIApplication sharedApplication].keyWindow
+
+// 布局
+#define MAS_SHORTHAND
+#import <Masonry.h>
+
+// 屏幕尺寸
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kStatusBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define kNavBarHeight (self.navigationController.navigationBar.frame.size.height)
+#define kStatusAndNavHeight (kStatusBarHeight + kNavBarHeight)
+#define kTabBarHeight (self.tabBarController.tabBar.frame.size.height)
+
+// 颜色
+#define kRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define kHexColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define kFirstColor [UIColor colorWithRed:212/255.0 green:59/255.0 blue:33/255.0 alpha:1]
+#define kBlackColor [UIColor blackColor]
+#define kWhiteColor [UIColor whiteColor]
+#define kGrayColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3]
+#define kLightGrayColor [UIColor colorWithRed:251/255.0f green:249/255.0f blue:254/255.0f alpha:1]
+#define kOrangeColor [UIColor colorWithRed:255/255.0f green:195/255.0f blue:98/255.0f alpha:1]
+
+// 字号
+#define kLargeFont [UIFont systemFontOfSize:18]
+#define kMediumFont [UIFont systemFontOfSize:15]
+#define kSmallFont [UIFont systemFontOfSize:12]
+#define kLargeBoldFont [UIFont boldSystemFontOfSize:18]
+#define kMediumBoldFont [UIFont boldSystemFontOfSize:15]
+#define kSmallBoldFont [UIFont boldSystemFontOfSize:12]
+
+#endif /* PrefixHeader_pch */
