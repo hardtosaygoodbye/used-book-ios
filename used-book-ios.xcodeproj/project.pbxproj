@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		34EC464D22008E4700B5329D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC464C22008E4700B5329D /* AppDelegate.m */; };
-		34EC465022008E4700B5329D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC464F22008E4700B5329D /* ViewController.m */; };
-		34EC465322008E4700B5329D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465122008E4700B5329D /* Main.storyboard */; };
 		34EC465522008E4800B5329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465422008E4800B5329D /* Assets.xcassets */; };
 		34EC465822008E4800B5329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465622008E4800B5329D /* LaunchScreen.storyboard */; };
 		34EC465B22008E4800B5329D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC465A22008E4800B5329D /* main.m */; };
-		34EC46AA220168CC00B5329D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC46A9220168CC00B5329D /* BaseViewController.m */; };
 		34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC46AD22016A9800B5329D /* SignInViewController.m */; };
+		34EC46B222016F8B00B5329D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC46B122016F8B00B5329D /* BaseViewController.m */; };
 		B5EC909DFC7AA2521173A308 /* libPods-used-book-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 337594A05791DD7BEE79E80F /* libPods-used-book-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -23,18 +21,15 @@
 		34EC464822008E4700B5329D /* used-book-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "used-book-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EC464B22008E4700B5329D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34EC464C22008E4700B5329D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		34EC464E22008E4700B5329D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		34EC464F22008E4700B5329D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		34EC465222008E4700B5329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34EC465422008E4800B5329D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34EC465722008E4800B5329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34EC465922008E4800B5329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EC465A22008E4800B5329D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34EC46A8220168CC00B5329D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		34EC46A9220168CC00B5329D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		34EC46AB2201692800B5329D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		34EC46AC22016A9800B5329D /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		34EC46AD22016A9800B5329D /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		34EC46B022016F8B00B5329D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		34EC46B122016F8B00B5329D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A29A5B0045635A15A0A601CB /* Pods-used-book-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-used-book-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-used-book-ios/Pods-used-book-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A6D0B4559FE784C38C08D73C /* Pods-used-book-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-used-book-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-used-book-ios/Pods-used-book-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,18 +75,15 @@
 		34EC464A22008E4700B5329D /* used-book-ios */ = {
 			isa = PBXGroup;
 			children = (
+				34EC46B022016F8B00B5329D /* BaseViewController.h */,
+				34EC46B122016F8B00B5329D /* BaseViewController.m */,
 				34EC46AF22016AA100B5329D /* Controller */,
 				34EC464B22008E4700B5329D /* AppDelegate.h */,
 				34EC464C22008E4700B5329D /* AppDelegate.m */,
-				34EC464E22008E4700B5329D /* ViewController.h */,
-				34EC464F22008E4700B5329D /* ViewController.m */,
-				34EC465122008E4700B5329D /* Main.storyboard */,
 				34EC465422008E4800B5329D /* Assets.xcassets */,
 				34EC465622008E4800B5329D /* LaunchScreen.storyboard */,
 				34EC465922008E4800B5329D /* Info.plist */,
 				34EC465A22008E4800B5329D /* main.m */,
-				34EC46A8220168CC00B5329D /* BaseViewController.h */,
-				34EC46A9220168CC00B5329D /* BaseViewController.m */,
 				34EC46AB2201692800B5329D /* PrefixHeader.pch */,
 			);
 			path = "used-book-ios";
@@ -175,7 +167,6 @@
 			files = (
 				34EC465822008E4800B5329D /* LaunchScreen.storyboard in Resources */,
 				34EC465522008E4800B5329D /* Assets.xcassets in Resources */,
-				34EC465322008E4700B5329D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */,
-				34EC46AA220168CC00B5329D /* BaseViewController.m in Sources */,
-				34EC465022008E4700B5329D /* ViewController.m in Sources */,
+				34EC46B222016F8B00B5329D /* BaseViewController.m in Sources */,
 				34EC465B22008E4800B5329D /* main.m in Sources */,
 				34EC464D22008E4700B5329D /* AppDelegate.m in Sources */,
 			);
@@ -222,14 +212,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		34EC465122008E4700B5329D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				34EC465222008E4700B5329D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		34EC465622008E4800B5329D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

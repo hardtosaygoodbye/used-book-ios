@@ -6,11 +6,11 @@
 //  Copyright © 2019 Taylor. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseViewController : ViewController
+@interface BaseViewController : UIViewController
 
 @end
 
