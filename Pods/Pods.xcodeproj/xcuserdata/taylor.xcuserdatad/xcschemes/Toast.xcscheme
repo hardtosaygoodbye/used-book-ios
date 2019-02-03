@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1C10C76DF5D9B6DEC5645ECEE78813BE"
-               BlueprintName = "Pods-used-book-ios"
+               BlueprintIdentifier = "BEB7CCA1DBCFFF094297A409D66D01BB"
+               BlueprintName = "Toast"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-used-book-ios.a">
+               BuildableName = "libToast.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

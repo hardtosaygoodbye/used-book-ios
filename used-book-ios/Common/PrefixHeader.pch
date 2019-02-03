@@ -11,10 +11,16 @@
 
 // 库
 #import <AFNetworking.h>
-
+//Common
+#import "AWNetwork.h"
+#import "AWAPI.h"
 // import
 #import "AppDelegate.h"
+// Controller
 #import "SignInViewController.h"
+#import "ChooseSchoolViewController.h"
+// View
+#import "AWTextField.h"
 
 // base url
 #ifdef DEBUG
@@ -61,8 +67,8 @@
 #define kFirstColor [UIColor colorWithRed:212/255.0 green:59/255.0 blue:33/255.0 alpha:1]
 #define kBlackColor [UIColor blackColor]
 #define kWhiteColor [UIColor whiteColor]
-#define kGrayColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3]
-#define kLightGrayColor [UIColor colorWithRed:251/255.0f green:249/255.0f blue:254/255.0f alpha:1]
+#define kGrayColor [UIColor colorWithRed:216/255.0f green:217/255.0f blue:218/255.0f alpha:1]
+#define kLightGrayColor [UIColor colorWithRed:241/255.0f green:242/255.0f blue:243/255.0f alpha:1]
 #define kOrangeColor [UIColor colorWithRed:255/255.0f green:195/255.0f blue:98/255.0f alpha:1]
 
 // 字号

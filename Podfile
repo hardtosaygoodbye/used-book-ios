@@ -6,4 +6,6 @@ pod 'AFNetworking'
 
 pod 'Masonry'
 
+pod 'Toast'
+
 end

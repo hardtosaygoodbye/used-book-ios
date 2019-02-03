@@ -15,20 +15,24 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
+  - Toast
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - Masonry
+    - Toast
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: cee40c19d284fc501ac77fba0d92bafb555e2afb
+PODFILE CHECKSUM: 6f50d34b0c750859251f7b35ac8358a01959bbc7
 
 COCOAPODS: 1.5.3

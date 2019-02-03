@@ -8,7 +8,7 @@
 
 #import "ChooseSchoolViewController.h"
 
-@interface ChooseSchoolViewController ()
+@interface ChooseSchoolViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -16,17 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"选择你的学校";
+    UITableView *tableView = [[UITableView alloc] init];
+    [self.view addSubview:tableView];
+    [tableView makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

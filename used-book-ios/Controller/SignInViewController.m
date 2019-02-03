@@ -9,7 +9,8 @@
 #import "SignInViewController.h"
 
 @interface SignInViewController ()
-
+@property (nonatomic, weak) AWTextField *phoneTF;
+@property (nonatomic, weak) AWTextField *codeTF;
 @end
 
 @implementation SignInViewController
@@ -39,6 +40,7 @@
     }];
     phoneTF.hintLabel.text = @"+86";
     phoneTF.textField.placeholder = @"请输入手机号";
+    self.phoneTF = phoneTF;
     
     UIButton *codeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:codeBtn];
@@ -51,6 +53,7 @@
     [codeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
     codeBtn.backgroundColor = kGrayColor;
     codeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [codeBtn addTarget:self action:@selector(onSMSCode:) forControlEvents:UIControlEventTouchUpInside];
     
     AWTextField *codeTF = [[AWTextField alloc] init];
     [self.view addSubview:codeTF];
@@ -62,6 +65,7 @@
     }];
     codeTF.hintLabel.text = @"验证码";
     codeTF.textField.placeholder = @"请输入验证码";
+    self.codeTF = codeTF;
     
     UIButton *signInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:signInBtn];
@@ -74,6 +78,15 @@
     [signInBtn setTitle:@"开始" forState:UIControlStateNormal];
     signInBtn.backgroundColor = kGrayColor;
     [signInBtn addTarget:self action:@selector(onStart:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onSMSCode:(UIButton *)sender {
+    NSString *phone = self.phoneTF.textField.text;
+    [[AWAPI shareInstance] requestGetSMSCodeWithPhone:phone complete:^(id data, long statusCode) {
+        if (kResSuccess) {
+             
+        }
+    }];
 }
 
 - (void)onStart:(UIButton *)sender {
