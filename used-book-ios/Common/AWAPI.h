@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)requestGetSMSCodeWithPhone:(NSString *)phone complete:(Complete)complete;
 
+- (void)requestSchoolsWithComplete:(Complete)complete;
 
 @end
 

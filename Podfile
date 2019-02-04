@@ -8,4 +8,8 @@ pod 'Masonry'
 
 pod 'Toast'
 
+pod 'MBProgressHUD'
+
+pod 'YYModel'
+
 end

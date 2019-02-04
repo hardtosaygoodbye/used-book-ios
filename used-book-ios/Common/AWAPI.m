@@ -21,8 +21,11 @@ static AWAPI *_instance = nil;
 }
 
 - (void)requestGetSMSCodeWithPhone:(NSString *)phone complete:(Complete)complete {
-    [[AWNetwork shareInstance] requestUrl:@"user/smsCode" method:POST param:@{@"phone":phone} isToken:NO complete:complete];
+    [[AWNetwork shareInstance] requestUrl:@"user/smsCode/" method:POST param:@{@"phone":phone} isToken:NO complete:complete];
 }
 
+- (void)requestSchoolsWithComplete:(Complete)complete {
+    [[AWNetwork shareInstance] requestUrl:@"user/schools/" method:GET param:nil isToken:NO complete:complete];
+}
 
 @end

@@ -11,9 +11,13 @@
 
 // 库
 #import <AFNetworking.h>
+#define MAS_SHORTHAND
+#import <Masonry.h>
+
 //Common
 #import "AWNetwork.h"
 #import "AWAPI.h"
+#import "AWUI.h"
 // import
 #import "AppDelegate.h"
 // Controller
@@ -24,11 +28,9 @@
 
 // base url
 #ifdef DEBUG
-#   define kBaseUrl @"https://test.daqinjia.cn/hysteria/api/"
-#   define kRongCloudAppID (@"uwd1c0sxdole1")
+#   define kBaseUrl @"http://book.swiftwhale.cn/api/v1/"
 #else
-#   define kBaseUrl @"https://www.daqinjia.cn/hysteria/api/"
-#   define kRongCloudAppID (@"8luwapkvuqxtl")
+#   define kBaseUrl @"http://book.swiftwhale.cn/api/v1/"
 #endif
 
 // 错误信息Toast
@@ -49,10 +51,6 @@
 #define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
 #define kWindow [UIApplication sharedApplication].keyWindow
 
-// 布局
-#define MAS_SHORTHAND
-#import <Masonry.h>
-
 // 屏幕尺寸
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
@@ -64,7 +62,7 @@
 // 颜色
 #define kRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 #define kHexColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-#define kFirstColor [UIColor colorWithRed:212/255.0 green:59/255.0 blue:33/255.0 alpha:1]
+#define kFirstColor [UIColor colorWithRed:253/255.0 green:141/255.0 blue:37/255.0 alpha:1]
 #define kBlackColor [UIColor blackColor]
 #define kWhiteColor [UIColor whiteColor]
 #define kGrayColor [UIColor colorWithRed:216/255.0f green:217/255.0f blue:218/255.0f alpha:1]

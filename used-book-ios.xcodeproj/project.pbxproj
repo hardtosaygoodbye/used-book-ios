@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340588EE2206F02900F01075 /* AWUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588ED2206F02900F01075 /* AWUI.m */; };
 		345E20B7220170CF00E583FD /* AWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E20B6220170CF00E583FD /* AWTextField.m */; };
 		345E20BA2201954600E583FD /* ChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E20B92201954600E583FD /* ChooseSchoolViewController.m */; };
 		34A79F192203D737006A68E5 /* AWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A79F182203D737006A68E5 /* AWAPI.m */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		337594A05791DD7BEE79E80F /* libPods-used-book-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-used-book-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		340588EC2206F02900F01075 /* AWUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWUI.h; sourceTree = "<group>"; };
+		340588ED2206F02900F01075 /* AWUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWUI.m; sourceTree = "<group>"; };
 		345E20B5220170CF00E583FD /* AWTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWTextField.h; sourceTree = "<group>"; };
 		345E20B6220170CF00E583FD /* AWTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWTextField.m; sourceTree = "<group>"; };
 		345E20B82201954600E583FD /* ChooseSchoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseSchoolViewController.h; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 		34A79F132203D47B006A68E5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				340588EC2206F02900F01075 /* AWUI.h */,
+				340588ED2206F02900F01075 /* AWUI.m */,
 				34A79F1B22041F57006A68E5 /* AWNetwork.h */,
 				34A79F1A22041F57006A68E5 /* AWNetwork.m */,
 				34EC46B022016F8B00B5329D /* BaseViewController.h */,
@@ -240,6 +245,7 @@
 			files = (
 				34A79F1C22041F57006A68E5 /* AWNetwork.m in Sources */,
 				34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */,
+				340588EE2206F02900F01075 /* AWUI.m in Sources */,
 				34EC46B222016F8B00B5329D /* BaseViewController.m in Sources */,
 				34EC465B22008E4800B5329D /* main.m in Sources */,
 				345E20BA2201954600E583FD /* ChooseSchoolViewController.m in Sources */,

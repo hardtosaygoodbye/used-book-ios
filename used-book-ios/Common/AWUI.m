@@ -7,7 +7,7 @@
 //
 
 #import "AWUI.h"
-#import <UIView+Toast.h>
+#import <MBProgressHUD.h>
 
 @implementation AWUI
 
@@ -96,12 +96,6 @@
     label.font = [UIFont systemFontOfSize:size];
     label.textColor = color;
     return label;
-}
-
-+ (void)makeToastWithText:(NSString *)text {
-    [kWindow makeToast:text
-                duration:3.0
-                position:[NSValue valueWithCGPoint:CGPointMake(kScreenWidth/2.0, kScreenHeight-100)]];
 }
 
 @end
