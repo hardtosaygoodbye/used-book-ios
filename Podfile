@@ -12,4 +12,6 @@ pod 'MBProgressHUD'
 
 pod 'YYModel'
 
+pod 'CYLTabBarController'
+
 end

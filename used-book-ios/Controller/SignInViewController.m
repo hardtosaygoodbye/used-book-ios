@@ -115,6 +115,7 @@
         return;
     }
     sender.enabled = NO;
+    sender.backgroundColor = kGrayColor;
     [[AWAPI shareInstance] requestGetSMSCodeWithPhone:phone complete:^(id data, long statusCode) {
         if (kResSuccess) {
             [AWUI showHudTipStr:@"获取验证码成功"];
@@ -129,8 +130,28 @@
 }
 
 - (void)onStart:(UIButton *)sender {
-    ChooseSchoolViewController *vc = [[ChooseSchoolViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    NSString *phone = self.phoneTF.textField.text;
+    NSString *code = self.codeTF.textField.text;
+    UserModel *userModel = [[UserModel alloc] init];
+    userModel.phone = phone;
+    userModel.code = code;
+    [AWAPI shareInstance].userModel = userModel;
+    
+    [[AWAPI shareInstance] requestAuthorityWithComplete:^(id data, long statusCode) {
+        if (kResSuccess) {
+            NSNumber *isSignUp = [data valueForKey:@"isSignUp"];
+            if (isSignUp.intValue == 1) {
+                // 注册
+                ChooseSchoolViewController *vc = [[ChooseSchoolViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            } else if (isSignUp.intValue == 0) {
+                // 登录
+                
+            } else {
+                [AWUI showHudTipStr:@"程序异常"];
+            }
+        }
+    }];
 }
 
 - (void)countDown:(NSTimer *)timer {

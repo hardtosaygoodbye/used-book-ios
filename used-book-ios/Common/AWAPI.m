@@ -28,4 +28,16 @@ static AWAPI *_instance = nil;
     [[AWNetwork shareInstance] requestUrl:@"user/schools/" method:GET param:nil isToken:NO complete:complete];
 }
 
+- (void)requestAuthorityWithComplete:(Complete)complete {
+    [[AWNetwork shareInstance] requestUrl:@"user/authority/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code} isToken:NO complete:complete];
+}
+
+- (void)requestMajorWithComplete:(Complete)complete {
+    [[AWNetwork shareInstance] requestUrl:@"user/majors/" method:GET param:@{@"schoolID": self.userModel.schoolID} isToken:NO complete:complete];
+}
+
+- (void)requestSignInWithComplete:(Complete)complete {
+    [[AWNetwork shareInstance] requestUrl:@"user/user/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code,@"schoolID":self.userModel.schoolID,@"majorID":self.userModel.majorID,@"grade":self.userModel.grade} isToken:NO complete:complete];
+}
+
 @end

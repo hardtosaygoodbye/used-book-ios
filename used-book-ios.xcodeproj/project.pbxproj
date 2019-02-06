@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		340588EE2206F02900F01075 /* AWUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588ED2206F02900F01075 /* AWUI.m */; };
+		340588F22208091200F01075 /* SchoolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588F12208091200F01075 /* SchoolModel.m */; };
+		340588F52209755D00F01075 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588F42209755D00F01075 /* UserModel.m */; };
+		340588F822097B0800F01075 /* ChooseMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588F722097B0800F01075 /* ChooseMajorViewController.m */; };
 		345E20B7220170CF00E583FD /* AWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E20B6220170CF00E583FD /* AWTextField.m */; };
 		345E20BA2201954600E583FD /* ChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E20B92201954600E583FD /* ChooseSchoolViewController.m */; };
 		34A79F192203D737006A68E5 /* AWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A79F182203D737006A68E5 /* AWAPI.m */; };
 		34A79F1C22041F57006A68E5 /* AWNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A79F1A22041F57006A68E5 /* AWNetwork.m */; };
+		34E9FDED2209B12600DB4DA0 /* MajorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDEC2209B12600DB4DA0 /* MajorModel.m */; };
+		34E9FDF0220AB6EF00DB4DA0 /* ChooseGradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDEF220AB6EF00DB4DA0 /* ChooseGradeViewController.m */; };
 		34EC464D22008E4700B5329D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC464C22008E4700B5329D /* AppDelegate.m */; };
 		34EC465522008E4800B5329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465422008E4800B5329D /* Assets.xcassets */; };
 		34EC465822008E4800B5329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465622008E4800B5329D /* LaunchScreen.storyboard */; };
@@ -25,6 +30,12 @@
 		337594A05791DD7BEE79E80F /* libPods-used-book-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-used-book-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		340588EC2206F02900F01075 /* AWUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWUI.h; sourceTree = "<group>"; };
 		340588ED2206F02900F01075 /* AWUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWUI.m; sourceTree = "<group>"; };
+		340588F02208091200F01075 /* SchoolModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchoolModel.h; sourceTree = "<group>"; };
+		340588F12208091200F01075 /* SchoolModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchoolModel.m; sourceTree = "<group>"; };
+		340588F32209755D00F01075 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		340588F42209755D00F01075 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		340588F622097B0800F01075 /* ChooseMajorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseMajorViewController.h; sourceTree = "<group>"; };
+		340588F722097B0800F01075 /* ChooseMajorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseMajorViewController.m; sourceTree = "<group>"; };
 		345E20B5220170CF00E583FD /* AWTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWTextField.h; sourceTree = "<group>"; };
 		345E20B6220170CF00E583FD /* AWTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWTextField.m; sourceTree = "<group>"; };
 		345E20B82201954600E583FD /* ChooseSchoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseSchoolViewController.h; sourceTree = "<group>"; };
@@ -33,6 +44,10 @@
 		34A79F182203D737006A68E5 /* AWAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWAPI.m; sourceTree = "<group>"; };
 		34A79F1A22041F57006A68E5 /* AWNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNetwork.m; sourceTree = "<group>"; };
 		34A79F1B22041F57006A68E5 /* AWNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNetwork.h; sourceTree = "<group>"; };
+		34E9FDEB2209B12600DB4DA0 /* MajorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MajorModel.h; sourceTree = "<group>"; };
+		34E9FDEC2209B12600DB4DA0 /* MajorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MajorModel.m; sourceTree = "<group>"; };
+		34E9FDEE220AB6EF00DB4DA0 /* ChooseGradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseGradeViewController.h; sourceTree = "<group>"; };
+		34E9FDEF220AB6EF00DB4DA0 /* ChooseGradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseGradeViewController.m; sourceTree = "<group>"; };
 		34EC464822008E4700B5329D /* used-book-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "used-book-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EC464B22008E4700B5329D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34EC464C22008E4700B5329D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +82,19 @@
 				337594A05791DD7BEE79E80F /* libPods-used-book-ios.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		340588EF220808FB00F01075 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				340588F02208091200F01075 /* SchoolModel.h */,
+				340588F12208091200F01075 /* SchoolModel.m */,
+				340588F32209755D00F01075 /* UserModel.h */,
+				340588F42209755D00F01075 /* UserModel.m */,
+				34E9FDEB2209B12600DB4DA0 /* MajorModel.h */,
+				34E9FDEC2209B12600DB4DA0 /* MajorModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		345E20B42201708F00E583FD /* View */ = {
@@ -115,6 +143,7 @@
 		34EC464A22008E4700B5329D /* used-book-ios */ = {
 			isa = PBXGroup;
 			children = (
+				340588EF220808FB00F01075 /* Model */,
 				34A79F132203D47B006A68E5 /* Common */,
 				345E20B42201708F00E583FD /* View */,
 				34EC46AF22016AA100B5329D /* Controller */,
@@ -135,6 +164,10 @@
 				34EC46AD22016A9800B5329D /* SignInViewController.m */,
 				345E20B82201954600E583FD /* ChooseSchoolViewController.h */,
 				345E20B92201954600E583FD /* ChooseSchoolViewController.m */,
+				340588F622097B0800F01075 /* ChooseMajorViewController.h */,
+				340588F722097B0800F01075 /* ChooseMajorViewController.m */,
+				34E9FDEE220AB6EF00DB4DA0 /* ChooseGradeViewController.h */,
+				34E9FDEF220AB6EF00DB4DA0 /* ChooseGradeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -244,14 +277,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A79F1C22041F57006A68E5 /* AWNetwork.m in Sources */,
+				34E9FDF0220AB6EF00DB4DA0 /* ChooseGradeViewController.m in Sources */,
 				34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */,
 				340588EE2206F02900F01075 /* AWUI.m in Sources */,
+				340588F52209755D00F01075 /* UserModel.m in Sources */,
+				34E9FDED2209B12600DB4DA0 /* MajorModel.m in Sources */,
 				34EC46B222016F8B00B5329D /* BaseViewController.m in Sources */,
 				34EC465B22008E4800B5329D /* main.m in Sources */,
 				345E20BA2201954600E583FD /* ChooseSchoolViewController.m in Sources */,
 				34A79F192203D737006A68E5 /* AWAPI.m in Sources */,
 				34EC464D22008E4700B5329D /* AppDelegate.m in Sources */,
 				345E20B7220170CF00E583FD /* AWTextField.m in Sources */,
+				340588F22208091200F01075 /* SchoolModel.m in Sources */,
+				340588F822097B0800F01075 /* ChooseMajorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CYLTabBarController (1.17.22)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - Toast (4.0.0)
@@ -21,6 +22,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CYLTabBarController
   - Masonry
   - MBProgressHUD
   - Toast
@@ -29,6 +31,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CYLTabBarController
     - Masonry
     - MBProgressHUD
     - Toast
@@ -36,11 +39,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CYLTabBarController: 35784c2969383583d11cc56ff5abce078f19d94a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2d53f39b97485ff715dd5a02852417df895f042b
+PODFILE CHECKSUM: 3eb94d80aa45c9a7f3ab0dea175176d025495ecc
 
 COCOAPODS: 1.5.3

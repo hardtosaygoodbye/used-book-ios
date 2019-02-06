@@ -12,12 +12,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AWAPI : NSObject
 
-+ (instancetype)shareInstance;
+@property (nonatomic, strong) UserModel *userModel;
 
++ (instancetype)shareInstance;
 
 - (void)requestGetSMSCodeWithPhone:(NSString *)phone complete:(Complete)complete;
 
 - (void)requestSchoolsWithComplete:(Complete)complete;
+
+- (void)requestAuthorityWithComplete:(Complete)complete;
+
+- (void)requestMajorWithComplete:(Complete)complete;
+
+- (void)requestSignInWithComplete:(Complete)complete;
 
 @end
 

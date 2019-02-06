@@ -13,7 +13,12 @@
 #import <AFNetworking.h>
 #define MAS_SHORTHAND
 #import <Masonry.h>
+#import <NSObject+YYModel.h>
 
+// Model
+#import "UserModel.h"
+#import "SchoolModel.h"
+#import "MajorModel.h"
 //Common
 #import "AWNetwork.h"
 #import "AWAPI.h"
@@ -23,8 +28,11 @@
 // Controller
 #import "SignInViewController.h"
 #import "ChooseSchoolViewController.h"
+#import "ChooseMajorViewController.h"
+#import "ChooseGradeViewController.h"
 // View
 #import "AWTextField.h"
+
 
 // base url
 #ifdef DEBUG
