@@ -1,8 +1,8 @@
 //
-//  UserModel.h
+//  HomeModel.h
 //  used-book-ios
 //
-//  Created by Taylor on 2019/2/5.
+//  Created by Taylor on 2019/2/10.
 //  Copyright © 2019 Taylor. All rights reserved.
 //
 
@@ -10,19 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UserModel : NSObject
+@interface HomeModel : NSObject
 
 @property (nonatomic, strong) NSNumber *userID;
 
-@property (nonatomic, copy) NSString *phone;
-
-@property (nonatomic, strong) NSNumber *schoolID;
-
-@property (nonatomic, strong) NSNumber *majorID;
+@property (nonatomic, copy) NSString *avatar;
 
 @property (nonatomic, copy) NSString *grade;
 
-@property (nonatomic, copy) NSString *code;
+@property (nonatomic, strong) NSArray<BookModel *> *books;
+
+@property (nonatomic, copy) NSString *schoolName;
 
 @property (nonatomic, copy) NSString *majorName;
 

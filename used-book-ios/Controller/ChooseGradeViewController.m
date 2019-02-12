@@ -56,6 +56,8 @@
             NSNumber *code = [data valueForKey:@"code"];
             if (code.intValue == 0) {
                 [AWUI showHudTipStr:@"注册成功"];
+                AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                [app signIn];
             }
         } else {
             kErrToast;

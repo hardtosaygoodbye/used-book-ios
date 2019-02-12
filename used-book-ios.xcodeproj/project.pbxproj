@@ -11,12 +11,21 @@
 		340588F22208091200F01075 /* SchoolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588F12208091200F01075 /* SchoolModel.m */; };
 		340588F52209755D00F01075 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588F42209755D00F01075 /* UserModel.m */; };
 		340588F822097B0800F01075 /* ChooseMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340588F722097B0800F01075 /* ChooseMajorViewController.m */; };
+		343F66F5220FDF7E0021246F /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 343F66F4220FDF7E0021246F /* HomeModel.m */; };
+		343F66F8220FE08C0021246F /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 343F66F7220FE08C0021246F /* BookModel.m */; };
+		343F66FB22117AD70021246F /* ContactInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 343F66FA22117AD70021246F /* ContactInfoView.m */; };
 		345E20B7220170CF00E583FD /* AWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E20B6220170CF00E583FD /* AWTextField.m */; };
 		345E20BA2201954600E583FD /* ChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E20B92201954600E583FD /* ChooseSchoolViewController.m */; };
 		34A79F192203D737006A68E5 /* AWAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A79F182203D737006A68E5 /* AWAPI.m */; };
 		34A79F1C22041F57006A68E5 /* AWNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A79F1A22041F57006A68E5 /* AWNetwork.m */; };
 		34E9FDED2209B12600DB4DA0 /* MajorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDEC2209B12600DB4DA0 /* MajorModel.m */; };
 		34E9FDF0220AB6EF00DB4DA0 /* ChooseGradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDEF220AB6EF00DB4DA0 /* ChooseGradeViewController.m */; };
+		34E9FDF3220AECFA00DB4DA0 /* tab_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E9FDF2220AECFA00DB4DA0 /* tab_home.png */; };
+		34E9FDF6220B1E1300DB4DA0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDF5220B1E1300DB4DA0 /* HomeViewController.m */; };
+		34E9FDF9220B1E6B00DB4DA0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDF8220B1E6B00DB4DA0 /* MineViewController.m */; };
+		34E9FDFC220B1EB900DB4DA0 /* SellerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDFB220B1EB900DB4DA0 /* SellerViewController.m */; };
+		34E9FDFF220D7BDF00DB4DA0 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FDFE220D7BDF00DB4DA0 /* HomeTableViewCell.m */; };
+		34E9FE01220D8E9A00DB4DA0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34E9FE00220D8E9900DB4DA0 /* test.jpg */; };
 		34EC464D22008E4700B5329D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC464C22008E4700B5329D /* AppDelegate.m */; };
 		34EC465522008E4800B5329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465422008E4800B5329D /* Assets.xcassets */; };
 		34EC465822008E4800B5329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EC465622008E4800B5329D /* LaunchScreen.storyboard */; };
@@ -36,6 +45,12 @@
 		340588F42209755D00F01075 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		340588F622097B0800F01075 /* ChooseMajorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseMajorViewController.h; sourceTree = "<group>"; };
 		340588F722097B0800F01075 /* ChooseMajorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseMajorViewController.m; sourceTree = "<group>"; };
+		343F66F3220FDF7E0021246F /* HomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		343F66F4220FDF7E0021246F /* HomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		343F66F6220FE08C0021246F /* BookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		343F66F7220FE08C0021246F /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		343F66F922117AD70021246F /* ContactInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactInfoView.h; sourceTree = "<group>"; };
+		343F66FA22117AD70021246F /* ContactInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactInfoView.m; sourceTree = "<group>"; };
 		345E20B5220170CF00E583FD /* AWTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWTextField.h; sourceTree = "<group>"; };
 		345E20B6220170CF00E583FD /* AWTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWTextField.m; sourceTree = "<group>"; };
 		345E20B82201954600E583FD /* ChooseSchoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseSchoolViewController.h; sourceTree = "<group>"; };
@@ -48,6 +63,16 @@
 		34E9FDEC2209B12600DB4DA0 /* MajorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MajorModel.m; sourceTree = "<group>"; };
 		34E9FDEE220AB6EF00DB4DA0 /* ChooseGradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseGradeViewController.h; sourceTree = "<group>"; };
 		34E9FDEF220AB6EF00DB4DA0 /* ChooseGradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseGradeViewController.m; sourceTree = "<group>"; };
+		34E9FDF2220AECFA00DB4DA0 /* tab_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_home.png; sourceTree = "<group>"; };
+		34E9FDF4220B1E1300DB4DA0 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		34E9FDF5220B1E1300DB4DA0 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		34E9FDF7220B1E6B00DB4DA0 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		34E9FDF8220B1E6B00DB4DA0 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		34E9FDFA220B1EB900DB4DA0 /* SellerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SellerViewController.h; sourceTree = "<group>"; };
+		34E9FDFB220B1EB900DB4DA0 /* SellerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SellerViewController.m; sourceTree = "<group>"; };
+		34E9FDFD220D7BDF00DB4DA0 /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		34E9FDFE220D7BDF00DB4DA0 /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		34E9FE00220D8E9900DB4DA0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		34EC464822008E4700B5329D /* used-book-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "used-book-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EC464B22008E4700B5329D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34EC464C22008E4700B5329D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +118,10 @@
 				340588F42209755D00F01075 /* UserModel.m */,
 				34E9FDEB2209B12600DB4DA0 /* MajorModel.h */,
 				34E9FDEC2209B12600DB4DA0 /* MajorModel.m */,
+				343F66F3220FDF7E0021246F /* HomeModel.h */,
+				343F66F4220FDF7E0021246F /* HomeModel.m */,
+				343F66F6220FE08C0021246F /* BookModel.h */,
+				343F66F7220FE08C0021246F /* BookModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,8 +129,13 @@
 		345E20B42201708F00E583FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34E9FE00220D8E9900DB4DA0 /* test.jpg */,
 				345E20B5220170CF00E583FD /* AWTextField.h */,
 				345E20B6220170CF00E583FD /* AWTextField.m */,
+				34E9FDFD220D7BDF00DB4DA0 /* HomeTableViewCell.h */,
+				34E9FDFE220D7BDF00DB4DA0 /* HomeTableViewCell.m */,
+				343F66F922117AD70021246F /* ContactInfoView.h */,
+				343F66FA22117AD70021246F /* ContactInfoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +154,14 @@
 				34EC46AB2201692800B5329D /* PrefixHeader.pch */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		34E9FDF1220AE04D00DB4DA0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				34E9FDF2220AECFA00DB4DA0 /* tab_home.png */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		34EC463F22008E4700B5329D = {
@@ -143,6 +185,7 @@
 		34EC464A22008E4700B5329D /* used-book-ios */ = {
 			isa = PBXGroup;
 			children = (
+				34E9FDF1220AE04D00DB4DA0 /* TabBar */,
 				340588EF220808FB00F01075 /* Model */,
 				34A79F132203D47B006A68E5 /* Common */,
 				345E20B42201708F00E583FD /* View */,
@@ -168,6 +211,12 @@
 				340588F722097B0800F01075 /* ChooseMajorViewController.m */,
 				34E9FDEE220AB6EF00DB4DA0 /* ChooseGradeViewController.h */,
 				34E9FDEF220AB6EF00DB4DA0 /* ChooseGradeViewController.m */,
+				34E9FDF4220B1E1300DB4DA0 /* HomeViewController.h */,
+				34E9FDF5220B1E1300DB4DA0 /* HomeViewController.m */,
+				34E9FDF7220B1E6B00DB4DA0 /* MineViewController.h */,
+				34E9FDF8220B1E6B00DB4DA0 /* MineViewController.m */,
+				34E9FDFA220B1EB900DB4DA0 /* SellerViewController.h */,
+				34E9FDFB220B1EB900DB4DA0 /* SellerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,8 +288,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E9FDF3220AECFA00DB4DA0 /* tab_home.png in Resources */,
 				34EC465822008E4800B5329D /* LaunchScreen.storyboard in Resources */,
 				34EC465522008E4800B5329D /* Assets.xcassets in Resources */,
+				34E9FE01220D8E9A00DB4DA0 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,17 +329,24 @@
 			files = (
 				34A79F1C22041F57006A68E5 /* AWNetwork.m in Sources */,
 				34E9FDF0220AB6EF00DB4DA0 /* ChooseGradeViewController.m in Sources */,
+				34E9FDFC220B1EB900DB4DA0 /* SellerViewController.m in Sources */,
 				34EC46AE22016A9800B5329D /* SignInViewController.m in Sources */,
 				340588EE2206F02900F01075 /* AWUI.m in Sources */,
 				340588F52209755D00F01075 /* UserModel.m in Sources */,
 				34E9FDED2209B12600DB4DA0 /* MajorModel.m in Sources */,
 				34EC46B222016F8B00B5329D /* BaseViewController.m in Sources */,
+				34E9FDF9220B1E6B00DB4DA0 /* MineViewController.m in Sources */,
 				34EC465B22008E4800B5329D /* main.m in Sources */,
+				34E9FDF6220B1E1300DB4DA0 /* HomeViewController.m in Sources */,
 				345E20BA2201954600E583FD /* ChooseSchoolViewController.m in Sources */,
+				343F66FB22117AD70021246F /* ContactInfoView.m in Sources */,
 				34A79F192203D737006A68E5 /* AWAPI.m in Sources */,
 				34EC464D22008E4700B5329D /* AppDelegate.m in Sources */,
+				343F66F8220FE08C0021246F /* BookModel.m in Sources */,
+				34E9FDFF220D7BDF00DB4DA0 /* HomeTableViewCell.m in Sources */,
 				345E20B7220170CF00E583FD /* AWTextField.m in Sources */,
 				340588F22208091200F01075 /* SchoolModel.m in Sources */,
+				343F66F5220FDF7E0021246F /* HomeModel.m in Sources */,
 				340588F822097B0800F01075 /* ChooseMajorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

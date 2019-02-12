@@ -33,6 +33,34 @@
 }
 
 - (void)signIn {
+    NSMutableArray *tabBarItemsAttributes = [NSMutableArray array];
+    NSArray *titleArray = @[@"首页",@"卖书",@"我的"];
+    NSArray *imageArray = @[@"tab_home",@"tab_home",@"tab_home"];
+    for (int i=0; i<titleArray.count; i++) {
+        NSString *title = titleArray[i];
+        NSString *imageName = imageArray[i];
+        NSString *selectedImageName = [NSString stringWithFormat:@"%@_selected",imageName];
+        NSDictionary *tabBarDict = @{
+                                     CYLTabBarItemTitle: title,
+                                     CYLTabBarItemImage: imageName,
+                                     CYLTabBarItemSelectedImage:selectedImageName
+                                     };
+        [tabBarItemsAttributes addObject:tabBarDict];
+    }
+    
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    
+    SellerViewController *sellerVC = [[SellerViewController alloc] init];
+    UINavigationController *sellerNav = [[UINavigationController alloc] initWithRootViewController:sellerVC];
+    
+    MineViewController *mineVC = [[MineViewController alloc] init];
+    UINavigationController *mineNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
+    
+    CYLTabBarController *tabBarController = [[CYLTabBarController alloc] initWithViewControllers:@[homeNav,sellerNav,mineNav] tabBarItemsAttributes:tabBarItemsAttributes];
+    tabBarController.tabBar.backgroundColor = kWhiteColor;
+    tabBarController.tabBar.tintColor = kFirstColor;
+    self.window.rootViewController = tabBarController;
     
 }
 

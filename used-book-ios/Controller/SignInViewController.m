@@ -146,10 +146,16 @@
                 [self.navigationController pushViewController:vc animated:YES];
             } else if (isSignUp.intValue == 0) {
                 // 登录
-                
+                [AWUI showHudTipStr:@"登录成功"];
+                [AWNetwork shareInstance].token = [data valueForKey:@"token"];
+                [AWAPI shareInstance].userModel = [UserModel yy_modelWithJSON:[data valueForKey:@"user"]];
+                AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                [app signIn];
             } else {
                 [AWUI showHudTipStr:@"程序异常"];
             }
+        } else {
+            kErrToast;
         }
     }];
 }

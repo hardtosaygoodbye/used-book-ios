@@ -42,17 +42,20 @@ static AWNetwork *_instance = nil;
     self.responseSerializer = serializer;
     self.requestSerializer = [AFJSONRequestSerializer serializer];
     self.requestSerializer.timeoutInterval = 5.0f;
+    NSMutableDictionary *tempParam = [NSMutableDictionary dictionaryWithDictionary:param];
     if (isToken && self.token) {
-        NSString *authorization = [NSString stringWithFormat:@"Token %@", self.token];
-        [self.requestSerializer setValue:authorization forHTTPHeaderField:@"Authorization"];
-    } else {
-        [self.requestSerializer clearAuthorizationHeader];
+//        NSString *authorization = [NSString stringWithFormat:@"Token %@", self.token];
+//        [self.requestSerializer setValue:authorization forHTTPHeaderField:@"Authorization"];
+        [tempParam setValue:self.token forKey:@"token"];
     }
-    Log(@"\n===========request===========\n%@\n%@:\n%@", kNetworkMethodName[method], url, param);
+//    else {
+//        [self.requestSerializer clearAuthorizationHeader];
+//    }
+    Log(@"\n===========request===========\n%@\n%@:\n%@", kNetworkMethodName[method], url, tempParam);
     switch (method) {
         case GET:
         {
-            [self GET:url parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self GET:url parameters:tempParam progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self handleResponseWithTask:task responseObject:responseObject error:nil complete:complete];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self handleResponseWithTask:task responseObject:nil error:error complete:complete];
@@ -61,7 +64,7 @@ static AWNetwork *_instance = nil;
             break;
         case POST:
         {
-            [self POST:url parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self POST:url parameters:tempParam progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self handleResponseWithTask:task responseObject:responseObject error:nil complete:complete];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self handleResponseWithTask:task responseObject:nil error:error complete:complete];
@@ -70,7 +73,7 @@ static AWNetwork *_instance = nil;
             break;
         case PUT:
         {
-            [self PUT:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self PUT:url parameters:tempParam success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self handleResponseWithTask:task responseObject:responseObject error:nil complete:complete];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self handleResponseWithTask:task responseObject:nil error:error complete:complete];
@@ -79,7 +82,7 @@ static AWNetwork *_instance = nil;
             break;
         case PATCH:
         {
-            [self PATCH:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self PATCH:url parameters:tempParam success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self handleResponseWithTask:task responseObject:responseObject error:nil complete:complete];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self handleResponseWithTask:task responseObject:nil error:error complete:complete];
@@ -88,7 +91,7 @@ static AWNetwork *_instance = nil;
             break;
         case DELETE:
         {
-            [self DELETE:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self DELETE:url parameters:tempParam success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self handleResponseWithTask:task responseObject:responseObject error:nil complete:complete];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self handleResponseWithTask:task responseObject:nil error:error complete:complete];

@@ -20,6 +20,22 @@ static AWAPI *_instance = nil;
     return _instance;
 }
 
+@synthesize userModel = _userModel;
+
+- (void)setUserModel:(UserModel *)userModel {
+    _userModel = userModel;
+    NSDictionary *userDict = [userModel yy_modelToJSONObject];
+    [[NSUserDefaults standardUserDefaults] setValue:userDict forKey:@"aw_user"];
+}
+
+- (UserModel *)userModel {
+    if (!_userModel) {
+        NSDictionary *userDict = [[NSUserDefaults standardUserDefaults] valueForKey:@"aw_user"];
+        _userModel = [UserModel yy_modelWithDictionary:userDict];
+    }
+    return _userModel;
+}
+
 - (void)requestGetSMSCodeWithPhone:(NSString *)phone complete:(Complete)complete {
     [[AWNetwork shareInstance] requestUrl:@"user/smsCode/" method:POST param:@{@"phone":phone} isToken:NO complete:complete];
 }
@@ -38,6 +54,14 @@ static AWAPI *_instance = nil;
 
 - (void)requestSignInWithComplete:(Complete)complete {
     [[AWNetwork shareInstance] requestUrl:@"user/user/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code,@"schoolID":self.userModel.schoolID,@"majorID":self.userModel.majorID,@"grade":self.userModel.grade} isToken:NO complete:complete];
+}
+
+- (void)requestHomeUsersWithComplete:(Complete)complete {
+    [[AWNetwork shareInstance] requestUrl:@"book/home/" method:GET param:nil isToken:YES complete:complete];
+}
+
+- (void)requestGetContactInfoWithUserID:(NSNumber *)userID complete:(Complete)complete {
+    [[AWNetwork shareInstance] requestUrl:@"user/contactInfo/" method:GET param:@{@"userID":userID} isToken:YES complete:complete];
 }
 
 @end

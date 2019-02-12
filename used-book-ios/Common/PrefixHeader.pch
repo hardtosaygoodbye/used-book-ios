@@ -14,11 +14,15 @@
 #define MAS_SHORTHAND
 #import <Masonry.h>
 #import <NSObject+YYModel.h>
+#import <CYLTabBarController.h>
 
 // Model
 #import "UserModel.h"
 #import "SchoolModel.h"
 #import "MajorModel.h"
+#import "BookModel.h"
+#import "HomeModel.h"
+
 //Common
 #import "AWNetwork.h"
 #import "AWAPI.h"
@@ -30,13 +34,17 @@
 #import "ChooseSchoolViewController.h"
 #import "ChooseMajorViewController.h"
 #import "ChooseGradeViewController.h"
+#import "HomeViewController.h"
+#import "SellerViewController.h"
+#import "MineViewController.h"
 // View
 #import "AWTextField.h"
+#import "HomeTableViewCell.h"
 
 
 // base url
 #ifdef DEBUG
-#   define kBaseUrl @"http://book.swiftwhale.cn/api/v1/"
+#   define kBaseUrl @"http://127.0.0.1:8000/api/v1/"
 #else
 #   define kBaseUrl @"http://book.swiftwhale.cn/api/v1/"
 #endif

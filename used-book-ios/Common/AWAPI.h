@@ -26,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)requestSignInWithComplete:(Complete)complete;
 
+- (void)requestHomeUsersWithComplete:(Complete)complete;
+
+- (void)requestGetContactInfoWithUserID:(NSNumber *)userID complete:(Complete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END
