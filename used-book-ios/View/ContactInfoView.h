@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ContactInfoView : UIView
 
+@property (nonatomic, weak) UILabel *phoneLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

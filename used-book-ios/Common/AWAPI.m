@@ -61,7 +61,7 @@ static AWAPI *_instance = nil;
 }
 
 - (void)requestGetContactInfoWithUserID:(NSNumber *)userID complete:(Complete)complete {
-    [[AWNetwork shareInstance] requestUrl:@"user/contactInfo/" method:GET param:@{@"userID":userID} isToken:YES complete:complete];
+    [[AWNetwork shareInstance] requestUrl:@"user/contactInfos/" method:GET param:@{@"userID":userID} isToken:YES complete:complete];
 }
 
 @end

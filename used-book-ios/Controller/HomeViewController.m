@@ -74,11 +74,18 @@
                 NSString *phone = [data valueForKey:@"phone"];
                 NSString *qq = [data valueForKey:@"qq"];
                 NSString *wechat = [data valueForKey:@"wechat"];
+                [self showContactInfoWithPhone:phone qq:qq wechat:wechat];
             }
         } else {
             kErrToast;
         }
     }];
+}
+
+- (void)showContactInfoWithPhone:(NSString *)phone qq:(NSString *)qq wechat:(NSString *)wechat {
+    ContactInfoView *contactInfoView = [[ContactInfoView alloc] init];
+    contactInfoView.phoneLabel.text = phone;
+    [kWindow addSubview:contactInfoView];
 }
 
 @end
