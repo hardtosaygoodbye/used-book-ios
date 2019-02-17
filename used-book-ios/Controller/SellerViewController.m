@@ -16,17 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIButton *releaseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:releaseBtn];
+    [releaseBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(@44);
+        make.left.equalTo(self.view).offset(20);
+        make.right.equalTo(self.view).offset(-20);
+        make.bottom.equalTo(self.view).offset(-20);
+    }];
+    releaseBtn.backgroundColor = kFirstColor;
+    [releaseBtn setTitle:@"发布二手书" forState:UIControlStateNormal];
+    releaseBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    [self.view addSubview:tableView];
+    [tableView makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.bottom.equalTo(releaseBtn.top).offset(-20);
+        make.top.equalTo(self.view);
+    }];
+    tableView.backgroundColor = kWhiteColor;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
