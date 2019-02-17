@@ -85,6 +85,8 @@
 - (void)showContactInfoWithPhone:(NSString *)phone qq:(NSString *)qq wechat:(NSString *)wechat {
     ContactInfoView *contactInfoView = [[ContactInfoView alloc] init];
     contactInfoView.phoneLabel.text = phone;
+    contactInfoView.qqLabel.text = qq;
+    contactInfoView.wechatLabel.text = wechat;
     [kWindow addSubview:contactInfoView];
 }
 

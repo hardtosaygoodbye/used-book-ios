@@ -37,7 +37,7 @@ static AWAPI *_instance = nil;
 }
 
 - (void)requestGetSMSCodeWithPhone:(NSString *)phone complete:(Complete)complete {
-    [[AWNetwork shareInstance] requestUrl:@"user/smsCode/" method:POST param:@{@"phone":phone} isToken:NO complete:complete];
+    [[AWNetwork shareInstance] requestUrl:@"user/smsCodes/" method:POST param:@{@"phone":phone} isToken:NO complete:complete];
 }
 
 - (void)requestSchoolsWithComplete:(Complete)complete {
@@ -45,7 +45,7 @@ static AWAPI *_instance = nil;
 }
 
 - (void)requestAuthorityWithComplete:(Complete)complete {
-    [[AWNetwork shareInstance] requestUrl:@"user/authority/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code} isToken:NO complete:complete];
+    [[AWNetwork shareInstance] requestUrl:@"user/authorities/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code} isToken:NO complete:complete];
 }
 
 - (void)requestMajorWithComplete:(Complete)complete {
@@ -53,7 +53,7 @@ static AWAPI *_instance = nil;
 }
 
 - (void)requestSignInWithComplete:(Complete)complete {
-    [[AWNetwork shareInstance] requestUrl:@"user/user/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code,@"schoolID":self.userModel.schoolID,@"majorID":self.userModel.majorID,@"grade":self.userModel.grade} isToken:NO complete:complete];
+    [[AWNetwork shareInstance] requestUrl:@"user/users/" method:POST param:@{@"phone":self.userModel.phone, @"code":self.userModel.code,@"schoolID":self.userModel.schoolID,@"majorID":self.userModel.majorID,@"grade":self.userModel.grade} isToken:NO complete:complete];
 }
 
 - (void)requestHomeUsersWithComplete:(Complete)complete {

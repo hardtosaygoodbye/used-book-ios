@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) UILabel *phoneLabel;
 
+@property (nonatomic, weak) UILabel *qqLabel;
+
+@property (nonatomic, weak) UILabel *wechatLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END
